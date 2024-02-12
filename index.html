@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Are you <a style="color:#f7ff5f"><i>Norepinephrine</i></a> because you make my <a style="color:#ff738f"><i>heart</i></a> race.</h1>
+                <h1 class = "header_text">Will you be my <a style="color:#ff738f"><i>Valentines</i></a>, baby?</h1>
+            </div><br>
+            <div class="gif_container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Norepinephrine.svg/1200px-Norepinephrine.svg.png" alt="Cute animated illustration" height="200px;">
+                
+            </div><br>
+
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "fuck yea.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
